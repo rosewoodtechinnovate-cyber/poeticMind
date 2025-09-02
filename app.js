@@ -5,8 +5,7 @@ require('dotenv').config();
 const formRoutes = require('./routes/formRoutes');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/poeticMind', {
- 
+mongoose.connect(process.env.MONGODB_URI, {
 }).then(() => console.log('MongoDB connected'))
   .catch(err => console.error(err));
 const app = express();
