@@ -17,7 +17,7 @@ exports.initiateDonation = async (req, res) => {
         email,
         amount: amountInSubunit,
         currency, // 'NGN' or 'USD'
-        callback_url: "http://localhost:3008/thankyou"
+        callback_url: "https://www.thepoeticmind.org//thankyou"
       },
       {
         headers: {
