@@ -32,26 +32,25 @@
           </a>
         </div>
       </div>
-
-      <!-- Right column (carousel) -->
-      <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mt-5 mt-lg-0">
+<!-- Right column (carousel) -->
+<div class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto mt-4 mt-lg-0">
   <div class="blog_text_slider owl-carousel w-100">
     <div class="item">
-      <div class="blog_text text-center bg-white bg-opacity-95 p-4 rounded-4 shadow-sm">
-        <ul class="list-unstyled mb-0 fs-5 fw-bold">
-          <li class="mb-3">
+      <div class="blog_text text-center bg-white bg-opacity-95 p-3 p-md-4 rounded-4 shadow-sm">
+        <ul class="list-unstyled mb-0 fs-6 fs-md-5 fw-bold">
+          <li class="mb-2 mb-md-3">
             <a href="/upload" class="d-block py-2 px-3 bg-light rounded-3 text-dark text-decoration-none fw-bold">Upload poems</a>
           </li>
-          <li class="mb-3">
+          <li class="mb-2 mb-md-3">
             <a href="/blog" class="d-block py-2 px-3 bg-light rounded-3 text-dark text-decoration-none fw-bold">Find poems</a>
           </li>
-          <li class="mb-3">
+          <li class="mb-2 mb-md-3">
             <a href="/upload" class="d-block py-2 px-3 bg-light rounded-3 text-dark text-decoration-none fw-bold">Share poems</a>
           </li>
-          <li class="mb-3">
+          <li class="mb-2 mb-md-3">
             <a href="/blog" class="d-block py-2 px-3 bg-light rounded-3 text-dark text-decoration-none fw-bold">Read poems</a>
           </li>
-          <li class="mb-3">
+          <li class="mb-2 mb-md-3">
             <a href="#" class="d-block py-2 px-3 bg-light rounded-3 text-dark text-decoration-none fw-bold">Connect with poets</a>
           </li>
         </ul>
@@ -60,8 +59,33 @@
     <!-- Add more carousel items if needed -->
   </div>
 </div>
-    </div>
-  </div>
+
+<style>
+/* Custom styles for responsiveness */
+@media (max-width: 767.98px) {
+  .blog_text {
+    padding: 1.5rem !important;
+  }
+  .blog_text ul {
+    font-size: 0.9rem !important;
+  }
+  .blog_text li a {
+    padding: 0.5rem 1rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .blog_text {
+    padding: 1rem !important;
+  }
+  .blog_text ul {
+    font-size: 0.8rem !important;
+  }
+  .blog_text li a {
+    padding: 0.4rem 0.8rem !important;
+  }
+}
+</style>
 </section>
 
 
