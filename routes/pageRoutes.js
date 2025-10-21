@@ -3,7 +3,7 @@ const express =require('express')
 const router = express.Router()
 
 
-const {index,blog, about, contact, detail, element, upload,success, thank}= require('../controllers/pageControllers')
+const {index,blog, about, contact, detail, element, upload,success, thank, school}= require('../controllers/pageControllers')
 
 
 router.get('/',index)
@@ -16,4 +16,5 @@ router.get('/upload',upload)
 router.get('/success', success)
 router.get('/thankyou',thank)
 
+router.get('/school',school)
 module.exports=router

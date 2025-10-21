@@ -39,6 +39,10 @@ const success = (req, res) => {
   res.render('success', { name: req.body.name });
 };
 
+const school = (req, res) => {
+  res.render('school');
+};
+
 module.exports={
-    index, contact,blog, detail, element,about,upload,success,thank
+    index, contact,blog, detail, element,about,upload,success,thank,school
 }
