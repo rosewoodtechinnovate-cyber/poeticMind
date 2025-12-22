@@ -43,6 +43,10 @@ const school = (req, res) => {
   res.render('school');
 };
 
+const event = (req, res) => {
+  res.render('event');
+};
+
 module.exports={
-    index, contact,blog, detail, element,about,upload,success,thank,school
+    index, contact,blog, detail, element,about,upload,success,thank,school,event
 }
