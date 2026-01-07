@@ -99,29 +99,92 @@
                         <div class="blog_left_sidebar">
                             <article class="blog_style1">
                              
-                            	<div class="blog_img">
-                            		<img class="img-fluid" src="img/wale.png" height="100" alt="">
-                            	</div>
-                            	<div class="blog_text">
-									<div class="blog_text_inner">
-										   <div class="cat">
-											<a class="cat_btn" href="#">Wale Andrew</a>
-											<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> </a>
-											<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> </a>
-										</div>
-										<a href="#"><h4>Still I Rise</h4></a>
-										<p>It’s a long ride in a short time <br>
-                                            She attacked me in my prime <br>
-                                            When I should be celebrated <br>
-                                            I was set up and humiliated <br>
-                                        I was carefree thinking she’s harmless <br>
-                                        Only to fall in a pit that is bottomless <br>
-                                            She desired to forcefully have her way <br>
-                                            Using even emotional blackmail to slay <br>
-</p>
-										<a class="blog_btn" href="/blog">Read More</a>
-									</div>
-								</div>
+                            	<!-- Poem of the Week Section -->
+<section class="section poem-of-the-week py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-5">
+                    <h2 class="title-color">Poem of the Week</h2>
+                    <div class="divider mx-auto"></div>
+                    <p class="mt-3 text-muted">A moment of reflection curated for you</p>
+                </div>
+
+                <div class="card shadow-sm border-0 overflow-hidden">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-md-5">
+                            <img src="/img/home.jpg" class="img-fluid w-100" style="height: 100%; object-fit: cover;" alt="Poem illustration">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body p-4 p-md-5">
+                                <div class="meta mb-3">
+                                    <span class="cat_btn mr-3">Saleem</span>
+                                    <span class="text-muted"><i class="fa fa-calendar mr-1"></i> January 07, 2026</span>
+                                </div>
+                                
+                                <h4 class="card-title mb-4">Home</h4>
+
+                                <!-- Truncated preview -->
+                                <div id="poem-preview">
+                                    <p class="lead text-muted">
+                                        Once you leave home<br>
+                                        life softens at the edges<br>
+                                        days blur into each other<br>
+                                        and direction feels like a rumour you once heard<br>
+                                        <br>
+                                        you wake up not knowing where you are going<br>
+                                        only that you must keep moving<br>
+                                        learning how to survive without the comfort of knowing<br>
+                                    </p>
+                                    <button id="read-more-btn" class="btn btn-main-2 btn-round-full mt-3">
+                                        Read More <i class="fas fa-arrow-right ml-2"></i>
+                                    </button>
+                                </div>
+
+                                <!-- Full poem (initially hidden) -->
+                                <div id="full-poem" class="d-none">
+                                    <p>
+                                        Once you leave home<br>
+                                        life softens at the edges<br>
+                                        days blur into each other<br>
+                                        and direction feels like a rumour you once heard<br>
+                                        <br>
+                                        you wake up not knowing where you are going<br>
+                                        only that you must keep moving<br>
+                                        learning how to survive without the comfort of knowing<br>
+                                        <br>
+                                        in another man’s land you become a stranger<br>
+                                        pronouncing your own name carefully<br>
+                                        measuring your steps your words your silence<br>
+                                        trying not to take up too much space<br>
+                                        <br>
+                                        you miss things you never noticed before<br>
+                                        the way time moved slower<br>
+                                        the way laughter sounded fuller<br>
+                                        the way you belonged without explaining yourself<br>
+                                        <br>
+                                        and when you return<br>
+                                        home no longer fits the way it used to<br>
+                                        the walls recognise you but you do not<br>
+                                        you stand still in familiar rooms<br>
+                                        realising that leaving did not just change the place<br>
+                                        it changed you<br>
+                                        <br>
+                                        now you are both<br>
+                                        a stranger there<br>
+                                        and a visitor here..
+                                    </p>
+                                    <button id="read-less-btn" class="btn btn-outline-primary btn-round-full mt-4">
+                                        Show Less <i class="fas fa-arrow-up ml-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
                             </article>
                             <div class="row">
                             	<div class="col-md-6">
@@ -412,3 +475,17 @@ I am a selfish poetess,
         </section>
         <!--================Blog Area =================-->
         
+
+        <script>
+    document.getElementById('read-more-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('poem-preview').classList.add('d-none');
+        document.getElementById('full-poem').classList.remove('d-none');
+    });
+
+    document.getElementById('read-less-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('full-poem').classList.add('d-none');
+        document.getElementById('poem-preview').classList.remove('d-none');
+    });
+</script>
